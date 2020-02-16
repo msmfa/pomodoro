@@ -1,6 +1,8 @@
 const workButton = document.getElementById("work");
 const breakButton = document.getElementById("break");
+const longBreakbutton = document.getElementById("long-break");
 const display = document.querySelector(".timer");
+const tickAudio = new Audio("beep-04.mp3");
 
 let countdown;
 
@@ -14,6 +16,7 @@ function timer(seconds) {
     const secondLeft = Math.round((then - Date.now()) / 1000);
     if (secondLeft < 0) {
       clearInterval(countdown);
+      tickAudio.play();
       return;
     }
     displayTimeLeft(secondLeft);
@@ -37,4 +40,8 @@ workButton.addEventListener("click", function(e) {
 
 breakButton.addEventListener("click", function(e) {
   timer(300);
+});
+
+longBreakbutton.addEventListener("click", function(e) {
+  timer(1800);
 });

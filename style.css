@@ -1,22 +1,47 @@
 body {
   box-sizing: border-box;
-  text-align: center;
+
   margin: 0;
   padding: 0;
   outline: none;
   overflow: hidden;
   font-family: "Noto Sans JP", sans-serif;
+}
+#notes {
+  letter-spacing: 0.2em;
+  padding-left: 10px;
+  font-size: 18px;
+  color: white;
+}
+input:focus {
+  outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+.container {
+  border: 1px solid white;
   background-color: #d04643;
+  border-radius: 7px;
+  width: 600px;
+  height: 180px;
+  padding: 40px;
+  margin: 10px;
 }
 .timer {
-  color: white;
   display: flex;
   justify-content: center;
-  margin: 30vh 0 5vh 0;
-  font-size: 5em;
+  color: white;
+  margin: 0 0 5vh 0;
+  font-size: 3em;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
 .buttons button {
+  text-align: center;
   color: rgba(240, 191, 191, 0.973);
   font-size: 12px;
   letter-spacing: 0.05em;
@@ -31,4 +56,39 @@ body {
 
 .buttons button:hover {
   background-color: rgba(207, 110, 110, 0.384);
+}
+
+.text {
+  background-color: #d04643;
+  border-radius: 5px;
+  width: 320px;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 0px 0 30px 0;
+}
+
+.input {
+  background-color: #d04643;
+  margin-left: 9px;
+  width: 300px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgb(226, 177, 177);
+  text-align: left;
+  font-size: 20px;
+}
+
+#close-button {
+  float: right;
+  background-color: #d04643;
+  border: none;
+  color: white;
+  font-size: 19px;
+  margin-right: 7px;
+}
+
+.notes-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
 }
