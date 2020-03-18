@@ -5,6 +5,9 @@ body {
   outline: none;
   overflow: hidden;
   font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
 }
 #notes {
   letter-spacing: 0.2em;
