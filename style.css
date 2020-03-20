@@ -94,3 +94,21 @@ button:focus {
   justify-content: space-between;
   margin-top: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 70vw;
+    height: 40vw;
+  }
+
+  .buttons button {
+    letter-spacing: 0.3em;
+    background-color: #d04643;
+    outline: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 45px;
+    width: 40vw;
+    color: rgb(236, 217, 217);
+  }
+}
