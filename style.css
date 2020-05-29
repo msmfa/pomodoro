@@ -1,19 +1,19 @@
 body {
   box-sizing: border-box;
+  display: flex;
+  font-family: "Noto Sans JP", sans-serif;
+  justify-content: center;
   margin: 0;
-  padding: 0;
   outline: none;
   overflow: hidden;
-  font-family: "Noto Sans JP", sans-serif;
-  display: flex;
-  justify-content: center;
+  padding: 0;
   padding-top: 20vh;
 }
 #notes {
+  color: white;
+  font-size: 18px;
   letter-spacing: 0.25em;
   padding-left: 10px;
-  font-size: 18px;
-  color: white;
 }
 input:focus {
   outline: 0;
@@ -25,17 +25,17 @@ button:focus {
   border: 1px solid white;
   background-color: #d04643;
   border-radius: 7px;
-  width: 600px;
   height: 180px;
-  padding: 40px;
   margin: 10px;
+  padding: 40px;
+  width: 600px;
 }
 .timer {
-  display: flex;
-  justify-content: center;
   color: white;
-  margin: 0 0 5vh 0;
+  display: flex;
   font-size: 3em;
+  justify-content: center;
+  margin: 0 0 5vh 0;
 }
 
 .buttons {
@@ -43,16 +43,16 @@ button:focus {
   justify-content: center;
 }
 .buttons button {
-  text-align: center;
-  color: rgba(240, 191, 191, 0.973);
-  font-size: 12px;
-  letter-spacing: 0.05em;
   background-color: #d04643;
-  outline: 0;
   border: 1px solid white;
   border-radius: 5px;
-  margin: 5px;
+  color: rgba(240, 191, 191, 0.973);
+  font-size: 12px;
   height: 45px;
+  letter-spacing: 0.05em;
+  margin: 5px;
+  outline: 0;
+  text-align: center;
   width: 144px;
 }
 
@@ -62,29 +62,29 @@ button:focus {
 
 .text {
   background-color: #d04643;
-  border-radius: 5px;
-  width: 320px;
   border: 1px solid red;
+  border-radius: 5px;
   margin: 10px;
   padding: 0px 0 30px 0;
+  width: 320px;
 }
 
 .input {
   background-color: #d04643;
-  margin-left: 9px;
-  width: 300px;
-  color: white;
   border: none;
   border-bottom: 1px solid rgb(226, 177, 177);
-  text-align: left;
+  color: white;
   font-size: 20px;
+  margin-left: 9px;
+  text-align: left;
+  width: 300px;
 }
 
 #close-button {
-  float: right;
   background-color: #d04643;
   border: none;
   color: white;
+  float: right;
   font-size: 19px;
   margin-right: 7px;
 }
@@ -97,18 +97,18 @@ button:focus {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 70vw;
     height: 40vw;
+    width: 70vw;
   }
 
   .buttons button {
-    letter-spacing: 0.3em;
     background-color: #d04643;
-    outline: 0;
     border: 1px solid white;
     border-radius: 5px;
-    height: 45px;
-    width: 40vw;
     color: rgb(236, 217, 217);
+    height: 45px;
+    letter-spacing: 0.3em;
+    outline: 0;
+    width: 40vw;
   }
 }
